@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
+import 'bulma/css/bulma.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import './styles/index.scss';
+
+import { App } from './App';
+import { AuthProvider } from './components/Auth/AuthContext';
+
+const Root = () => (
+  <AuthProvider>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </AuthProvider>
 );
+
+createRoot(document.getElementById('root') as HTMLDivElement)
+  .render(<Root />);
