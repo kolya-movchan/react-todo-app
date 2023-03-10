@@ -1,3 +1,5 @@
+[DEMO LINK](https://kolya-movchan.github.io/react-todo-app/)
+
 ## Introduction
 The React todo app that I built is a fully functional application that allows users to add, delete, mark todos as completed or that need to be done, and update data on the API. The app was built using a variety of tools and methods that showcase my proficiency in React, TypeScript, and API integration.
 
